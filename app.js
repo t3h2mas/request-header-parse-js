@@ -1,6 +1,8 @@
 var express = require('express');
 var app = express();
 
+app.set('port', (process.env.PORT || 5000));
+
 function parseSoftware(str) {
   var start = str.indexOf('(');
   var end = str.indexOf(')');
@@ -16,4 +18,4 @@ app.get('/', function(req, res){
   res.json({ipaddress: ip, language: lang, software: software});
 });
 
-app.listen(5000);
+app.listen(app.get('port'));
