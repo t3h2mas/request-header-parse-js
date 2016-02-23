@@ -10,9 +10,15 @@ function parseSoftware(str) {
   return str.slice(start+1, end)
 }
 
+function parseIp(str) {
+  // return ipv4 IP instead of ipv6 && ipv4
+  var arr = str.split(':');
+  return arr[ arr.length - 1]; // same as python's -1 index
+}
+
 app.get('/', function(req, res){
   console.dir(req.headers);
-  var ip = req.ip;
+  var ip = parseIp(req.ip);
   var lang = req.get('accept-language').split(',')[0];
   var software = parseSoftware(req.get('user-agent'));
   res.json({ipaddress: ip, language: lang, software: software});
