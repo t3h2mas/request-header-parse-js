@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/t3h2mas/request-header-parse-js/issues"
   },
-  "homepage": "https://github.com/t3h2mas/request-header-parse-js#readme"
+  "homepage": "https://github.com/t3h2mas/request-header-parse-js#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
 }
