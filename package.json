@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/t3h2mas/request-header-parse-js#readme",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "jasmine": "^2.4.1",
+    "request": "^2.69.0"
   }
 }
