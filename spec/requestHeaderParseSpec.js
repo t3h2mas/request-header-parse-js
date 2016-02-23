@@ -30,6 +30,7 @@ describe("request-header-parse-js", function () {
 
         expect(resp.language).toBe('English');
         expect(resp.software).toBe('Linux Wins');
+        expect(resp.ipaddress).toBe('127.0.0.1');
         done();
       });
     });
