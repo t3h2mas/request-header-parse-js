@@ -1,0 +1,24 @@
+{
+  "name": "request-header-parse-js",
+  "version": "1.0.0",
+  "description": "Parse request header with Express.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/t3h2mas/request-header-parse-js.git"
+  },
+  "keywords": [
+    "fcc",
+    "express",
+    "header"
+  ],
+  "author": "Thomas Noe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/t3h2mas/request-header-parse-js/issues"
+  },
+  "homepage": "https://github.com/t3h2mas/request-header-parse-js#readme"
+}
